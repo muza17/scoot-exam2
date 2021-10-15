@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>scoot</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    
+    <div class="container">
+        <!--header-->
+        <header class="header">
+            <div class="left">
+                <div class="header__burger" onclick="myFunction(this)">
+                    <div class="header__burger-line1"></div>
+                    <div class="header__burger-line2"></div>
+                    <div class="header__burger-line3"></div>
+                </div>
+                <a class="header__logo" href="index.html">
+                    <img  src="./img/scoot.svg" style="width: 107.82px; height: 28.56px;" alt="header-logo">
+                </a>
+                <ul class="nav__header nav">
+                    <li class="nav__item">
+                        <a href="#">about</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">location</a>
+                    </li>
+                    <li class="nav__item">
+                        <a  href="#">careers</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="header__button">
+                <a href="#">get scootin</a>
+            </button>
+        </header>
+    </div>
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+        const navSlide=()=>{
+            const burger=document.querySelector('.header__burger');
+            const nav=document.querySelector('.nav');
+            const button=document.querySelector('.header__button');
+
+
+            burger.addEventListener('click',()=>{
+                nav.classList.toggle('nav-active');
+                button.classList.toggle('header__button-active');
+
+            });
+
+        }
+        navSlide();
+    </script>
+        
 </body>
 </html>

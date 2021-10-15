@@ -1,0 +1,125 @@
+.intro{
+    display: block;
+    background-image: url(./../../img/intro-bcg-d2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 152px;
+    
+
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 215px;
+        height: 15px;
+        background-image: url(./../../img/intro-left-strelka.svg);
+        background-repeat: no-repeat;
+        background-size: unset;
+        top: 445px;
+        position: absolute;
+        
+        
+    }
+    &::after{
+        content: "";
+        display: inline-block;
+        width: 445px;
+        height: 138px;
+        background-image: url(./../../img/intro-right-strelka.svg);
+        background-repeat: no-repeat;
+        background-size: unset;
+        top: 449px;
+        position: absolute;
+        right: 288px;
+
+    }
+
+    &__heading{
+        margin: 0;
+        padding: 153px 0px 0px 0px;
+        max-width: 500px;
+        letter-spacing: -2.5px;
+        margin-bottom: 40px;
+        @include text($ffamily:'Space Mono',$fweight:bold,$fsize:56px,$lheight:56px, $color:#FFFFFF );
+    }
+    &__text{
+        max-width: 405px;
+        margin-bottom: 40px;
+        margin-left: 60px;
+        @include text($ffamily:'Lexend Deca',$fweight:normal,$fsize:15px,$lheight:25px, $color:#FFFFFF );
+        
+    }
+    &__button{
+        margin-left: 60px;
+        @include button();
+        & a{
+            text-decoration: none;
+            text-transform: capitalize;
+            font-style: normal;
+            text-align: center;
+            @include text($ffamily:'Space Mono',$fweight:bold,$fsize:15px,$lheight:25px, $color:#FFFFFF );
+        }
+        &:hover{
+            border: 3px solid $main-yellow;
+            background-color: #FFFFFF;
+
+            a{
+                color: $main-yellow;
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width:780px){
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+
+        &::before{
+            display: none;
+        }
+        &::after{
+            top: 580px;
+            padding-bottom: 40px;
+           
+        }
+
+        &__heading{
+            max-width: 573px;
+            margin-bottom: 24px;
+            text-align: center;
+
+        }
+        &__text{
+            max-width: 573px;
+            margin-bottom: 32px;
+            text-align: center;
+            margin-left: 0px;
+        }
+        &__button{
+            margin: 0 auto;
+            align-items:center;
+            margin-bottom: 40px;
+           
+            
+
+        }
+    }
+    
+}
+@media only screen and (max-width:376px){
+    .intro{
+      
+        &__heading{
+            padding-top: 115px;
+            max-width: 311px;
+            @include text($fsize:40px,$lheight:40px,$ffamily:'Space Mono',$fweight:bold, $color:#FFFFFF );
+        }
+        &__text{
+            max-width: 311px;
+            margin-bottom: 34px;
+        }
+    }
+}

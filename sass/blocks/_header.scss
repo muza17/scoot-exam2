@@ -22,21 +22,21 @@
         &-line1{
             width: 35px;
             height: 5px;
-            background-color: #333;
+            background-color: $main-yellow;
             margin: 6px 0;
             transition: 0.4s;
         }
         &-line2{
             width: 35px;
             height: 5px;
-            background-color: #333;
+            background-color: $main-yellow;
             margin: 6px 0;
             transition: 0.4s;
         }
         &-line3{
             width: 35px;
             height: 5px;
-            background-color: #333;
+            background-color: $main-yellow;
             margin: 6px 0;
             transition: 0.4s;
         }
@@ -62,7 +62,7 @@
             font-weight: bold;
             font-size: 15px;
             line-height: 25px; 
-            color: #939CAA;
+            color: $dim-grey;
             text-transform: capitalize;
             text-decoration:none;
 
@@ -79,7 +79,6 @@
     }
     &__button{
         padding: 14px 39px;
-        float: right;
         background-color: $main-yellow;
         border:none;
 
@@ -96,7 +95,7 @@
         }
         &:hover{
             border: 3px solid $main-yellow;
-            background-color: #FFFFFF;
+            background-color: #F2F2F2;;
 
             a{
                 color: $main-yellow;
@@ -120,6 +119,10 @@
             display: block;
             position: absolute;
             margin-left: -82px;
+        }
+        &__logo{
+            width: 75px;
+            height: 20px;
         }
         
         .nav{

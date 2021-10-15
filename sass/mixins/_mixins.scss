@@ -1,0 +1,12 @@
+@mixin text($ffamily:'space mono',$fweight:normal,$fsize:15px,$lheight:20px, $color:#FFFFFF ) {
+    font-family: $ffamily;
+    font-weight: $fweight;
+    font-size: $fsize;
+    line-height: $lheight;
+    color: $color;
+}
+@mixin button(){
+    background-color: $main-yellow;
+    padding: 14px 39px;
+    border: 3px solid $main-yellow;
+}

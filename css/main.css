@@ -559,7 +559,7 @@ body {
     width: 70%;
     height: 90vh;
     padding-top: 64px;
-    top: 10vh;
+    top: 65px;
     background-color: #333A44;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -596,6 +596,7 @@ body {
   .header .nav-active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+    z-index: 1;
   }
   .header .header__button-active {
     -webkit-transform: translateX(0%);
@@ -757,6 +758,88 @@ body {
   .intro__text {
     max-width: 311px;
     margin-bottom: 34px;
+  }
+}
+
+.services {
+  display: block;
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 165px;
+  padding: 0;
+  margin-top: 160px;
+}
+
+.services__item {
+  margin-right: 30px;
+  list-style: none;
+}
+
+.services__item .circle {
+  padding: 20px;
+  height: 80px;
+  background-color: yellow;
+  border-radius: 50%;
+  width: 80px;
+}
+
+.services__item-title {
+  max-width: 350px;
+  margin-bottom: 27px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+
+.services__item-text {
+  max-width: 350px;
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+@media only screen and (max-width: 795px) {
+  .services__list {
+    display: inline-block;
+    margin-left: 50px;
+  }
+  .services__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .services__item .circle {
+    margin-top: 25px;
+    margin-right: 80px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .services__list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services__item {
+    display: inline-block;
+    text-align: center;
+  }
+  .services__item .circle {
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */

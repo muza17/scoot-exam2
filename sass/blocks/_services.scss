@@ -1,0 +1,88 @@
+.services{
+    display: block;
+
+    &__list{
+        display: flex;
+        margin-left: 165px;
+        padding: 0;
+        margin-top: 160px;
+    }
+    
+    &__item{
+        margin-right: 30px;
+        list-style: none;
+        
+       .circle{
+            padding: 20px;
+            height: 80px;
+            background-color: yellow;
+            border-radius: 50%;
+            width: 80px;
+        }
+
+        // &::before{
+        //     content: "";
+        //     width: 96px;
+        //     height: 96px;
+        //     padding: 20px;
+        //     background-image: url(./../../img/ride.svg);
+
+        // }
+        
+        
+        &-title{
+            max-width: 350px;
+            margin-bottom: 27px;
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07143px;
+            color: #495567;
+        }
+        &-text{
+            max-width: 350px;
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA; 
+        }
+        
+    }
+}
+@media only screen and (max-width:795px){
+    .services{  
+        &__list{
+            display: inline-block;
+            margin-left: 50px;
+        }
+        &__item{
+            display: flex;
+            justify-content: space-between;
+
+            .circle{
+                margin-top: 25px;
+                margin-right: 80px;
+            }
+         }
+    }
+}
+
+@media only screen and (max-width:425px){
+    .services{  
+        &__list{
+            align-items: center;
+         }
+         &__item{
+            display: inline-block;
+            text-align: center;
+
+            .circle{
+                margin: 0 auto;
+            }
+         }
+    }
+}

@@ -842,4 +842,115 @@ body {
     margin: 0 auto;
   }
 }
+
+.footer {
+  background-image: url(./../../img/footer-bcg-d.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 102px 0px;
+}
+
+.footer__heading {
+  margin: 0;
+  padding: 0;
+  max-width: 415px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #FFFFFF;
+}
+
+.footer__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__images-img {
+  margin-left: 18px;
+  width: 159px;
+  height: 56px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    background-image: url(./../../img/footer-bcg-t.png);
+  }
+  .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__heading {
+    max-width: 457px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .footer__images {
+    display: block;
+  }
+  .footer__images-img {
+    width: 113px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .footer {
+    background-image: url(./../../img/footer-bcg-m.png);
+  }
+  .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__heading {
+    font-size: 32px;
+    line-height: 32px;
+    max-width: 311px;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -1.4px;
+  }
+  .footer__images {
+    display: block;
+  }
+  .footer__images-img {
+    width: 113px;
+    height: 40px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
